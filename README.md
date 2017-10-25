@@ -5,7 +5,7 @@ Ionic directive that opens a menu with fabs arranged in a circular fashion
 
 # Demo
 
-Coming soon
+https://luiskcs89.github.io/ionic-circular-popup-menu/demo/
 
 # Usage
 
