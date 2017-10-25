@@ -1,0 +1,94 @@
+/// Mixin to place items on a circle
+/// @author Hugo Giraudel
+/// @author Ana Tudor
+/// @param {Integer} $item-count - Number of items on the circle
+/// @param {Length} $circle-size - Large circle size
+/// @param {Length} $item-size - Single item size
+@mixin on-circle($item-count, $circle-size, $item-size) {  
+  position: absolute;
+  top:  50%; 
+  left: 50%;
+  width:  $circle-size;
+  height: $circle-size;
+  border-radius: 50%;
+  padding: 0; 
+  list-style: none;
+  
+  > * {
+  	position: absolute;
+    display: block;
+    margin: -($item-size / 2);
+    width:  $item-size;
+    height: $item-size;
+  
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+.button-label {
+	font-size: x-small;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: -25px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+.circle-container1 {
+  @include on-circle($item-count: 1, $circle-size: 15em, $item-size: 5.5em);
+}
+
+.circle-container2 {
+  @include on-circle($item-count: 2, $circle-size: 15em, $item-size: 5.5em);
+}
+
+.circle-container3 {
+  @include on-circle($item-count: 3, $circle-size: 15em, $item-size: 5.5em);
+}
+
+.circle-container4 {
+  @include on-circle($item-count: 4, $circle-size: 15em, $item-size: 5.5em);
+}
+
+.circle-container5 {
+  @include on-circle($item-count: 5, $circle-size: 15em, $item-size: 5.5em);
+}
+
+.circle-container6 {
+  @include on-circle($item-count: 6, $circle-size: 15em, $item-size: 5.5em);
+}
+
+.circle-container7 {
+  @include on-circle($item-count: 7, $circle-size: 15em, $item-size: 5.5em);
+}
+
+.circle-container8 {
+  @include on-circle($item-count: 8, $circle-size: 15em, $item-size: 5.5em);
+}
+
+.circle-container9 {
+  @include on-circle($item-count: 9, $circle-size: 15em, $item-size: 5.5em);
+}
+
+.circle-container10 {
+  @include on-circle($item-count: 10, $circle-size: 15em, $item-size: 5.5em);
+}
+
+.circle-container11 {
+  @include on-circle($item-count: 12, $circle-size: 15em, $item-size: 5.5em);
+}
+
+.circle-container12 {
+  @include on-circle($item-count: 12, $circle-size: 15em, $item-size: 5.5em);
+}
