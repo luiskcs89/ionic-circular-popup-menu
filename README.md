@@ -72,7 +72,7 @@ export class HomePage {
 This menu only accepts 1 to 12 elements, anyway is doesn't fit more than 12 buttons
 
 
-# Options for the button Details
+# Options for ButtonDetails
 
 * label    
 Label to show under the button.
