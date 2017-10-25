@@ -48,7 +48,7 @@ Add the button details on your page component
 import { ButtonDetails } from 'ionic-circular-popup-menu';
       
 @Component({
-  selector: 'page-homr',
+  selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
