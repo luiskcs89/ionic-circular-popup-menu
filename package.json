@@ -1,11 +1,18 @@
 {
   "name": "ionic-circular-popup-menu",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Ionic directive that opens a menu with fabs arranged in a circular fashion",
   "main": "./dist/index.js",
   "typings": "./dist/index.ts",
   "files": "dist",
   "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luiskcs89/ionic-circular-popup-menu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luiskcs89/ionic-circular-popup-menu/issues"
+  },
   "scripts": {
     "build": "npm run build:esm",
     "build:esm": "gulp inline-templates && npm run ngcompile && npm run clean:tmp",

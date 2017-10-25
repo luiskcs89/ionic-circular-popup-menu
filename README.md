@@ -1,6 +1,7 @@
 # Ionic-Circular-Popup-Menu directive (Ionic 2)
 
 Ionic-Circular-Popup-Menu directive (Ionic 2)
+Ionic directive that opens a menu with fabs arranged in a circular fashion
 
 # Demo
 
