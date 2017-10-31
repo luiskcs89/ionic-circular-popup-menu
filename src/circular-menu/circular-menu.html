@@ -1,5 +1,5 @@
 <ion-content>
   	<ul [ngClass]="'circle-container'+buttonDetails.length">
-  		<li *ngFor="let buttonDetail of buttonDetails"><ion-fab right bottom><button ion-fab color="buttonDetail.color" (click)="runAndDismiss(buttonDetail)"><ion-icon [name]="buttonDetail.icon"></ion-icon></button></ion-fab><p class="button-label">{{buttonDetail.label}}</p></li>
+  		<li *ngFor="let buttonDetail of buttonDetails"><ion-fab right bottom><button ion-fab color="{{buttonDetail.color}}" (click)="runAndDismiss(buttonDetail)"><ion-icon [name]="buttonDetail.icon"></ion-icon></button></ion-fab><p class="button-label">{{buttonDetail.label}}</p></li>
 	</ul>
 </ion-content>
